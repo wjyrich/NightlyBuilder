@@ -68,3 +68,11 @@ linux {
         DEFINES += LINUX_X64
     }
 }
+
+target.path = $$PREFIX/bin
+desktop.files = NightlyBuilder.desktop
+desktop.path = $$PREFIX/share/applications/
+icons.path = $$PREFIX/share/icons/hicolor/apps/
+icons.files = NightlyBuilder.png
+
+INSTALLS += target desktop icons
